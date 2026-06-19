@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.celeste-container {
+  @apply max-w-6xl mx-auto px-4 py-8;
+}
+
+.celeste-card {
+  @apply bg-celeste-light rounded-lg p-6 shadow-lg;
+}
+
+.celeste-button {
+  @apply px-6 py-3 bg-celeste-accent rounded-lg font-semibold hover:opacity-90 transition-opacity;
+}
+
+.celeste-input {
+  @apply w-full px-4 py-2 rounded-lg bg-celeste-light text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-celeste-accent;
+}
+
+.celeste-avatar {
+  @apply w-32 h-32 rounded-full bg-gradient-to-br from-celeste-accent to-pink-600 flex items-center justify-center text-4xl shadow-lg;
+}
